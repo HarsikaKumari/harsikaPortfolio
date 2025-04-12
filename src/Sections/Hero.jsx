@@ -5,6 +5,7 @@ import HackerRoom from "../components/HackerRoom.jsx";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
+import Target from "../components/Target.jsx";
 
 const Hero = () => {
 
@@ -39,7 +40,9 @@ const Hero = () => {
                             scale={[sizes.deskScale, sizes.deskScale, sizes.deskScale]}
                             rotation={[0, -Math.PI / 2, 0]}
                         />
-
+                        <group>
+                            <Target position={sizes.targetPosition} />
+                        </group>
                     </Suspense>
                 </Canvas>
             </div>
