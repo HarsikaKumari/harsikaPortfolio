@@ -10,6 +10,7 @@ import ReactLogo from "../components/ReactLogo.jsx";
 import {Leva} from "leva";
 import Rings from "../components/Rings.jsx";
 import Cube from "../components/Cube.jsx";
+import HeroCamera from "../components/HeroCamera.jsx";
 
 const Hero = () => {
 
@@ -37,11 +38,9 @@ const Hero = () => {
                         <Leva hidden />
                         <PerspectiveCamera makeDefault position={[0, 0, 20]} />
 
-                        <HackerRoom
-                            position={sizes.deskPosition}
-                            scale={[sizes.deskScale, sizes.deskScale, sizes.deskScale]}
-                            rotation={[0, -Math.PI / 2, 0]}
-                        />
+                        <HeroCamera isMobile={isMobile}>
+                            <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.1, -Math.PI, 0]} />
+                        </HeroCamera>
                         <group>
                             <Target position={sizes.targetPosition} />
                             <ReactLogo position={sizes.reactLogoPosition} />
