@@ -8,6 +8,8 @@ import {calculateSizes} from "../constants/index.js";
 import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
 import {Leva} from "leva";
+import Rings from "../components/Rings.jsx";
+import Cube from "../components/Cube.jsx";
 
 const Hero = () => {
 
@@ -43,6 +45,8 @@ const Hero = () => {
                         <group>
                             <Target position={sizes.targetPosition} />
                             <ReactLogo position={sizes.reactLogoPosition} />
+                            <Rings position={sizes.ringPosition} />
+                            <Cube position={sizes.cubePosition} />
                         </group>
 
                         <ambientLight intensity={1} />
