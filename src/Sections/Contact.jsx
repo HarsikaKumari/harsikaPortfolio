@@ -16,6 +16,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // setLoading(true);
+        // nodeMailer
         //npm i emailJs: emailJs.send(
         // service_id,
         // template_id,
@@ -35,11 +36,10 @@ const Contact = () => {
 
     return (
         <section className="c-space my-20" id="contact">
-            <div className="relative min-h-screen flex items-center justify-center flex-col">
-                <img src="/assets/terminal.png" alt="terminal background" className="absolute inset-0 min-h-screen" />
-
-                <div className="contact-container">
-                    <h3 className="mt-20 head-text">Let's talk</h3>
+            <div className="relative min-h-content flex items-center justify-center flex-col">
+                <img src="/assets/terminal.png" alt="terminal background" className="absolute inset-0 h-full" />
+                <div className="contact-container py-20 h-full">
+                    <h3 className="head-text">Let's talk</h3>
                     <p className="text-lg text-white-600 mt-3">
                         Whether you're looking to build a new website, improve your existing platform, or bring a unique project a life, I'm here to help.
                     </p>
