@@ -54,7 +54,7 @@ const Contact = () => {
                             onChange={handleChange}
                             required={true}
                             className="field-input"
-                            placeholder="John Doe"
+                            placeholder="Harsika Kumari"
                             />
                         </label>
                         <label className="space-y-3">
@@ -66,7 +66,7 @@ const Contact = () => {
                             onChange={handleChange}
                             required={true}
                             className="field-input"
-                            placeholder="johndoe@gmail.com"
+                            placeholder="kumariharsika@gmail.com"
                             />
                         </label>
                         <label className="space-y-3">
@@ -90,7 +90,6 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            {/*<h3 className="head-text">Contact Me</h3>*/}
         </section>
     )
 }
